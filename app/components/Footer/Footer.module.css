@@ -1,0 +1,133 @@
+.wrapperSoc {
+  display: none;
+}
+
+.mobileSoc {
+  display: none;
+}
+
+.footer {
+  padding: 16px 0;
+  width: 100%;
+  margin: 0 auto;
+  --gutter: clamp(12px, 4vw, 20px);
+}
+
+.container {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+  box-sizing: border-box;
+}
+
+.footerNavList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  padding: 15px 0;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding-left: 0;
+}
+
+.footerNavItem {
+  list-style: none;
+  font-family: "Cera Stencil PRO";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.footerNavList::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc(-1 * var(--gutter));
+  width: calc(100% + var(--gutter) * 2);
+  height: 129px;
+  background: url(/img/fire_bg@2x.png) center / cover no-repeat;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.footerNavElemMobile {
+  text-decoration: none;
+  font-family: "Cera Stencil PRO Trial Medium";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0;
+  color: #ffffff;
+}
+
+@media (min-width: 1440px) {
+  .footerNavList::after {
+    display: none;
+  }
+
+  .mobileSoc {
+    display: block;
+  }
+
+  .display {
+    display: block;
+  }
+
+  .footer {
+    padding-top: 37px;
+    padding-bottom: 37px;
+    margin-bottom: 0px;
+    background-image: url("/img/webp/footer_back@2x.webp");
+    background-repeat: no-repeat;
+    background-position: center 20px;
+    background-size: 1440px 159px;
+  }
+
+  .container {
+    margin: 0 auto;
+    max-width: 1140px;
+    background-color: #ffffff1a;
+    border-radius: 8px;
+  }
+
+  .footerNavList {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 50px;
+    align-items: center;
+    justify-content: space-between;
+    height: 85px;
+  }
+
+  .footerNavElem {
+    height: 100%;
+    text-decoration: none;
+    font-style: normal;
+    font-family: "Cera Stencil PRO", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1;
+    color: #ffffff;
+  }
+
+  .wrapperSoc {
+    display: flex;
+    flex-direction: row;
+    gap: 51px;
+  }
+
+  .footerSocItem {
+    color: #ffffff;
+  }
+
+  .footerNavElem:hover,
+  .footerNavElem:active,
+  .footerSocItem:hover,
+  .footerSocItem:active {
+    color: #e00d1d;
+  }
+}

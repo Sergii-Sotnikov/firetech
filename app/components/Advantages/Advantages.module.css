@@ -1,0 +1,116 @@
+.advantages {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 30px;
+  --gutter: clamp(12px, 4vw, 20px);
+}
+
+.containerAdvantages {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.advantagesTitle {
+  font-family: var(--font-alumni-pinstripe), sans-serif;
+  font-weight: 400;
+  font-size: clamp(36px, 10vw, 56px);
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  background: linear-gradient(
+    180deg,
+    #0e1118 0%,
+    #ffffff 57.94%,
+    #0e1118 119.31%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  margin: 0;
+  text-wrap: balance;
+}
+
+.wrapperMobile{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.advantagesTitleText {
+  font-family: var(--font-inter), sans-serif;
+  font-weight: 700;
+  font-size: clamp(20px, 7vw, 28px);
+  line-height: 1;
+  color: #ffffff;
+  text-align: center;
+}
+
+.pictureHero {
+  height: auto;
+  width: 98px;
+}
+
+/* ===== Desktop 1440+ ===== */
+@media (min-width: 1440px) {
+  .advantages {
+    max-width: none;
+    padding-top: 55px;
+    padding-bottom: 30px;
+  }
+
+  .containerAdvantages {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 140px;
+    margin: 0 auto;
+  }
+
+  .advantagesTitle {
+    font-family: var(--font-alumni-pinstripe), sans-serif;
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 1;
+    letter-spacing: 0;
+    text-align: center;
+    text-transform: uppercase;
+    background: linear-gradient(
+      180deg,
+      rgb(14, 17, 24),
+      rgb(255, 255, 255),
+      rgb(14, 17, 24)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    margin: 0;
+  }
+
+  .wrapperMobile{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+}
+
+  .advantagesTitleText {
+    font-family: var(--font-inter), sans-serif;
+    font-weight: 700;
+    font-size: 110px;
+    line-height: 1.5;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .pictureHero {
+    width: 346px;
+    height: auto;
+  }
+}

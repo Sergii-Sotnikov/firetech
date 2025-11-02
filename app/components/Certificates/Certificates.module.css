@@ -1,0 +1,119 @@
+.certificates {
+  padding-top: 32px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+    margin: 0 auto;
+  width: 100%;
+  max-width: 420px;
+  padding: 0 16px;
+}
+
+.declarationImage,
+.certificateImage{
+  width: 288px;
+  height: auto;
+}
+
+.title,
+.titleSert {
+  color: #fff;
+  margin: 0px 0px 21px 0px;
+  font-family: "Cera Stencil PRO";
+  font-weight: 900;
+  font-style: Black;
+  font-size: clamp(16px, 4.29vw, 18px);
+  line-height: 1;
+  letter-spacing: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.title{
+  padding-top: 32px;
+}
+.titleSert{
+    margin-top: 21px;
+}
+
+.declarationList,
+.certificateList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 21px;
+  margin-bottom: 21px;
+}
+
+.certificateList {
+  margin-bottom: 0px;
+}
+
+
+@media (min-width: 1440px) {
+.certificates {
+  width: 100%;
+  padding: 100px 100px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 150px;
+}
+
+.declarationImage{
+  width: 1166px;
+  height: auto;
+}
+
+.heroTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.title,
+.titleSert {
+  color: #fff;
+  margin: 0px 0px 93px 0px;
+  font-family: "Cera Stencil PRO";
+  font-weight: 900;
+  font-style: Black;
+  font-size: 48px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.titleSert{
+    margin-top: 71px;
+}
+
+.declarationList,
+.certificateList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 93px;
+  margin-bottom: 93px;
+}
+
+.certificateList {
+  margin-bottom: 0px;
+}
+
+.certificateImage{
+width: 1192px;
+height: auto;
+}
+
+  }

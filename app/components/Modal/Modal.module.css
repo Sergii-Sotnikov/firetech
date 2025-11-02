@@ -1,0 +1,65 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 16px;
+  box-sizing: border-box;
+  overscroll-behavior: contain;
+}
+
+.modal {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  padding: 60px 16px 24px;
+  border-radius: 11px;
+  background-color: #111111;
+  box-sizing: border-box;
+  max-height: none;
+  overflow: visible;
+  margin-top: 200px;
+}
+
+.closeButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 32px;
+  height: 32px;
+  background: transparent;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media (min-width: 1440px) {
+  .backdrop {
+    padding: 24px;
+  }
+
+  .modal {
+    max-width: 1200px;
+    padding: 70px 126px;
+    border-radius: 25px;
+    max-height: none;
+    margin-top: 0px;
+  }
+
+  .closeButton {
+    top: 30px;
+    right: 30px;
+    width: 35px;
+    height: 35px;
+  }
+}
