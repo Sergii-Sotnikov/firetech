@@ -4,7 +4,7 @@ import Fire from "./components/Fire/Fire";
 import HeroMain from "./components/HeroMain/HeroMain";
 import Solution from "./components/Solution/Solution";
 import VideoMainPage from "./components/VideoMainPage/VideoMainPage";
-import Choice from "./components/Сhoice/Сhoice";
+
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
       <VideoMainPage/>
       <Solution />
       <Arguments/>
-      {/* <Choice/> */}
+
     </>
   );
 }

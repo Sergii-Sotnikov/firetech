@@ -81,6 +81,9 @@ export const metadata: Metadata = {
       "max-video-preview": -1,
     },
   },
+   other: {
+    'google-site-verification': 'PASTE_CODE_FROM_GSC'
+  },
 };
 
 export default function RootLayout({
